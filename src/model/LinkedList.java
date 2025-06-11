@@ -50,6 +50,10 @@ public class LinkedList<T> {
         return false;
     }
 
+    public Node<T> getHead() { 
+        return head;
+    }
+
     public void print() {
         Node<T> current = head;
         while (current != null) {

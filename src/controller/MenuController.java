@@ -43,8 +43,8 @@ public class MenuController {
 
     public void addContact() {
         String nombre = consoleView.getInput("Nombre: ");
-        String phone = consoleView.getInput("Teléfono: ");
-        Contact contact = new Contact(nombre, phone);
+        String telefono = consoleView.getInput("Teléfono: ");
+        Contact contact = new Contact(nombre, telefono);
         contactManager.addContact(contact);
         consoleView.showMessage("Contacto agregado.");
     }

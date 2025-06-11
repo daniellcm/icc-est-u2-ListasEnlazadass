@@ -27,6 +27,24 @@ public class Contact {
 
     @Override
     public String toString() {
-        return "Contact{" + "Nombre='" + nombre + ", Telefono='" + telefono;
+        return "Contact{Nombre='" + nombre + "', Telefono='" + telefono + "'}"; 
+    }
+
+    @Override
+    public int hashCode() {
+        return nombre != null ? nombre.hashCode() : 0; 
+    }
+
+    @Override
+    public boolean equals(Object object) {
+        if(this == object) 
+            return true;
+            
+        if(object == null || getClass() != object.getClass()){
+            return false;
+        }
+        Contact c = (Contact) object;
+        c.getNombre();    
+        return nombre != null && nombre.equals(c.getNombre());
     }
 }

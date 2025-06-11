@@ -10,7 +10,7 @@ public class ContactManager {
     }
 
     public Contact findContactByName(String name) {
-        Node<Contact> current = new Node<>(null);
+        Node<Contact> current = contacts.getHead();
         current.setNext(new Node<>(null));
 
         while (current != null) {
@@ -23,7 +23,7 @@ public class ContactManager {
     }
 
     public boolean deleteContactByName(String name) {
-        Node<Contact> current = new Node<>(null);
+        Node<Contact> current = contacts.getHead();
         while (current != null) {
             Contact c = current.getValue();
             if (c != null && c.getNombre().equals(name)) {
