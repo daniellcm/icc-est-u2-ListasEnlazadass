@@ -1,5 +1,5 @@
 
-# Metodos Busqueda 
+# Listas Enlazadas
 
 ## 📌 Información General
 
